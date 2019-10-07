@@ -1,0 +1,31 @@
+{
+  "name": "themis-validation-rules-common",
+  "version": "1.0.34",
+  "description": "Themis Validation Engine Common Rules",
+  "author": "Gr33nbl00d",
+  "main": "dist/lib/src/index.js",
+  "module": "dist/lib/src/index.js",
+  "typings": "dist/types/src/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc --module commonjs",
+    "test": "ts-node ./test/runner.ts",
+    "generate-barrels": "barrelsby --delete -d ./src"
+  },
+  "dependencies": {
+    "vue-class-component": "^7.1.0",
+    "themis-validation-rules-common-filter": "0.9.0",
+    "themis-validation-rules-common": "0.9.0",
+    "themis-validation-core": "0.9.0"
+  },
+  "devDependencies": {
+    "alsatian": "^3.0.1",
+    "barrelsby": "^2.1.1",
+    "rimraf": "^3.0.0",
+    "tap-bark": "^2.1.0",
+    "themis-validation-core": "1.0.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3",
+    "vue": "^2.6.10"
+  }
+}
