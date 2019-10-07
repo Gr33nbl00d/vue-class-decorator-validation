@@ -1,5 +1,5 @@
 # vue-class-decorator-validation
-<b>Next generation decorator based Framework</b>
+<b>Next generation decorator based Validation Framework</b>
 
 Use decorators to define how your editable properties should be validated.
 The validation classes can also be used on server side without any dependency to vue.
