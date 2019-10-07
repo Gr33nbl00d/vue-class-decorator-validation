@@ -5,6 +5,10 @@ The validation classes can also be used on server side without any dependency to
 
 STILL ALPHA!
 
+<b>install with</b>
+npm install vue-class-decorator-validation themis-validation-rules-common --save
+
+
 
 <b>Vue HTML CODE:</b>
 ```vue
