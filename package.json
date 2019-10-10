@@ -1,6 +1,6 @@
 {
   "name": "vue-class-decorator-validation",
-  "version": "0.9.3",
+  "version": "0.9.7",
   "description": "Vue Class Decorator validation (powered by Themis Validation Engine)",
   "author": "Gr33nbl00d",
   "main": "dist/lib/src/index.js",
@@ -12,19 +12,34 @@
     "test": "ts-node ./test/runner.ts",
     "generate-barrels": "barrelsby --delete -d ./src"
   },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
+  },
   "dependencies": {
     "vue-class-component": "^7.1.0",
-    "themis-validation-rules-common-filter": "0.9.3",
-    "themis-validation-rules-common": "0.9.3",
-    "themis-validation-core": "0.9.1"
+    "themis-validation-rules-common-filter": "latest",
+    "themis-validation-rules-common": "latest",
+    "themis-validation-core": "latest"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
     "alsatian": "^3.0.1",
+    "babel-loader": "^8.0.6",
     "barrelsby": "^2.1.1",
     "rimraf": "^3.0.0",
     "tap-bark": "^2.1.0",
+    "terser-webpack-plugin": "^2.1.2",
+    "ts-loader": "^6.2.0",
     "ts-node": "^8.4.1",
     "typescript": "^3.6.3",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.1",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   }
 }
