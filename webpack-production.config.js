@@ -3,8 +3,7 @@ let mainInit = path.resolve(__dirname, './src/index.ts');
 
 
 module.exports = {
-    mode: 'development',
-    watch:true,
+    mode: 'production',
     target:"web",
     entry: {
         index: mainInit
