@@ -18,6 +18,7 @@ npm install vue-class-decorator-validation themis-validation-rules-common --save
 export default class MyComponentClass extends VueControllerNew {
 ```
 
+## Example:
 <b>Vue HTML CODE:</b>
 ```vue
 <template>
