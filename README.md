@@ -37,7 +37,7 @@ export default class MyComponentClass {
   //Validation rule definition for myText property
   @Validate(new Validator([new MandatoryRule()]))
   private myText: string;
-  private controllerValidation: VueControllerValidation;
+  private viewValidation: VueControllerValidation;
 
   constructor() {
     super();
@@ -51,7 +51,7 @@ export default class MyComponentClass {
   
   save() {
     //programatically check if any property is invalid
-    if (this.controllerValidation.isComponentInvalid() == false) {
+    if (this.viewValidation.isComponentInvalid() == false) {
       //save data
     }
 }
