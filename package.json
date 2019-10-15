@@ -1,6 +1,6 @@
 {
   "name": "vue-class-decorator-validation",
-  "version": "0.9.7",
+  "version": "0.9.8",
   "description": "Vue Class Decorator validation (powered by Themis Validation Engine)",
   "author": "Gr33nbl00d",
   "main": "dist/lib/src/index.js",
