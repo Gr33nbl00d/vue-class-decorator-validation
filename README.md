@@ -125,3 +125,22 @@ export default class MyComponentClass {
 }
 
 ```
+
+
+**Validation Groups
+Often it is needed to group validators. For example enable validation for one or more properties if a checkbox is marked.
+The @Validate decorator has a second argument which contains MetaData for this validation. It can also be used to define custom meta data like i18n prefixes or anything else you need to display the correct information to the user.
+
+```typescript
+@Validate(new Validator([new MandatoryRule()]), {groupName: 'registration'})
+private lastName: string;
+```
+
+```typescript
+private registrationCheckboxChanged(selected:boolean) {
+	if (selected)
+		this.viewValidation.enableGroup('registration');
+	else
+		this.viewValidation.disableGroup('registration');
+}
+```
