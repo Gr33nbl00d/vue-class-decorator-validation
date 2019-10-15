@@ -1,4 +1,5 @@
 
+
 # vue-class-decorator-validation
 <b>Next generation decorator based Validation Framework</b>
 
@@ -127,9 +128,9 @@ export default class MyComponentClass {
 ```
 
 
-##Validation Groups
+## Validation Groups
 Often it is needed to group validators. For example enable validation for one or more properties if a checkbox is marked.
-The @Validate decorator has a second argument which contains MetaData for this validation. It can also be used to define custom meta data like i18n prefixes or anything else you need to display the correct information to the user.
+The @Validate decorator has a second argument which contains MetaData for this validation. The metadata object can also be used to define custom meta data like i18n prefixes or anything else you need to know to display the correct information to the user.
 
 ```typescript
 @Validate(new Validator([new MandatoryRule()]), {groupName: 'registration'})
@@ -143,4 +144,39 @@ private registrationCheckboxChanged(selected:boolean) {
 	else
 		this.viewValidation.disableGroup('registration');
 }
+```
+
+## Inspect/Read Validation Errors
+
+```typescript
+//returns true if any property which is in an enabled group contains invalid data
+isComponentInvalid(): boolean;
+
+//returns a list or errrors containing metadata and rules that failed
+getComponentErrors(): Array<ValidatorError>;
+
+//returns a list or errrors containing metadata and rules that failed
+//mandatory rules will be filtered out
+getComponentErrosWithoutMandatoryRules(): Array<ValidatorError>
+
+//returns all errors for a specific field/property
+getFieldErrors(fieldName): Array<ValidatorError>;
+
+//returns a list of errortexts (convenience method)
+getFieldErrorTexts(fieldName: string, textProcessor: TextTemplateProcessor): Array<String>;
+
+//returns true if any rule does not match
+isFieldInvalid(fieldName): boolean;
+
+//Possibility to check specific values for a specific field
+isFieldInvalidWithValue(fieldName, value): boolean;
+
+//disable a specific group of validators
+disableGroup(groupName: string);
+
+//enable a specific group of validators
+enableGroup(groupName: string);
+
+//enables all groups
+clearDisabledGroups();
 ```
