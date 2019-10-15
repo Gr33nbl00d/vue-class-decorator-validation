@@ -127,7 +127,7 @@ export default class MyComponentClass {
 ```
 
 
-**Validation Groups
+##Validation Groups
 Often it is needed to group validators. For example enable validation for one or more properties if a checkbox is marked.
 The @Validate decorator has a second argument which contains MetaData for this validation. It can also be used to define custom meta data like i18n prefixes or anything else you need to display the correct information to the user.
 
