@@ -45,8 +45,8 @@ export class VueControllerValidation extends ObjectValidation {
         var errorMessages: Array<String> = [];
         for (const fieldError of fieldErrors) {
 
-            for (const validationRuleError of fieldError.validationRuleErrors) {
-                errorMessages.push(validationRuleError.validationRule.getErrorText(textProcessor));
+            for (const validationRuleError of fieldError.getRuleErrors()) {
+                errorMessages.push(validationRuleError.getErrorText(textProcessor));
             }
         }
         return errorMessages;
