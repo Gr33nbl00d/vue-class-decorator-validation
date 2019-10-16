@@ -12,6 +12,13 @@
     "test": "ts-node ./test/runner.ts",
     "generate-barrels": "barrelsby --delete -d ./src"
   },
+  "bugs": {
+    "url": "https://github.com/Gr33nbl00d/vue-class-decorator-validation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gr33nbl00d/vue-class-decorator-validation.git"
+  },
   "babel": {
     "presets": [
       [
