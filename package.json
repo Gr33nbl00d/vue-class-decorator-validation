@@ -1,6 +1,6 @@
 {
   "name": "vue-class-decorator-validation",
-  "version": "0.9.9",
+  "version": "0.9.10",
   "description": "Vue Class Decorator validation (powered by Themis Validation Engine)",
   "author": "Gr33nbl00d",
   "main": "dist/lib/src/index.js",
@@ -12,6 +12,14 @@
     "test": "ts-node ./test/runner.ts",
     "generate-barrels": "barrelsby --delete -d ./src"
   },
+  "keywords": [
+    "vue",
+    "class",
+    "babel",
+    "typescript",
+    "validation"
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Gr33nbl00d/vue-class-decorator-validation/issues"
   },
