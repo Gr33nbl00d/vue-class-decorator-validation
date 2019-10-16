@@ -57,7 +57,8 @@ export default class MyComponentClass {
 }
 ```
 
-
+## JSFiddle
+[JSFiddle](https://jsfiddle.net/mjtk3dhs/)
 
 ## ValidationRules
 
